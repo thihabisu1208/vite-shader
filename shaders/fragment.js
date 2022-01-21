@@ -22,10 +22,7 @@ void main() {
 
    float x = noiseUv.x * far;
    float y = noiseUv.y * far;
-
-   // float r = blob(x, y, 3.3, 3.2, 3.);
-   // float g = blob(x, y, 3.2, 2.9, 2.3);
-   // float b = blob(x, y, 2.4, 3.3, 2.9);
+   
    float r = blob(x, y, 3.3, 3.2, 3.) + blob(x, y, 3.9, 3.0, 5.) + blob(x, y, 4.5, 2.8, 4.);
    float g = blob(x, y, 3.2, 2.9, 2.3) + blob(x, y, 2.7, 2.7, 4.2) + blob(x, y, 2.2, 2.5, 5.2);
    float b = blob(x, y, 2.4, 3.3, 2.9) + blob(x, y, 2.8, 2.3, 5.2) + blob(x, y, 3.2, 1.3, 4.2);
