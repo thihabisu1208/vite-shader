@@ -82,7 +82,7 @@ uniform vec2 u_resolution;
 
 float speed = 3.;
 float far = 3.;
-float blurness = 80.;
+float blurness = 79.;
 
 float blob(float x, float y, float fx, float fy, float size){
    float xx = x + sin(u_time * fx / speed) * .7;
